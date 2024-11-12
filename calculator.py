@@ -1,15 +1,10 @@
-# Simple calculator
 def calculator():
     print("Select operation:")
     print("1. Addition")
     print("2. Subtraction")
     print("3. Multiplication")
     print("4. Division")
-    
-    # Take input from the user
     choice = input("Enter choice (1/2/3/4): ")
-    
-    # Check if choice is one of the four options
     if choice in ['1', '2', '3', '4']:
         try:
             num1 = float(input("Enter first number: "))
@@ -30,6 +25,4 @@ def calculator():
             print("Invalid input. Please enter numeric values.")
     else:
         print("Invalid choice. Please choose a valid operation.")
-
-# Run the calculator
 calculator()
